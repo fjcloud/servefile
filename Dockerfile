@@ -4,4 +4,4 @@ COPY servefile/servefile.py .
 
 RUN chmod +x servefile.py
 
-CMD ["./servefile.py", "-u /tmp", "-p 8080"]
+ENTRYPOINT ["python","servefile.py"]
